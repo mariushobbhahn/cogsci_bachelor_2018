@@ -1,0 +1,40 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdftex 2017.6.27)  26 JUL 2017 08:29
+entering extended mode
+**C:/BenediktWalter/Programme/WS/Dissertation/bib/lit.bib
+(C:/BenediktWalter/Programme/WS/Dissertation/bib/lit.bib
+Overfull \hbox (152.52303pt too wide) in paragraph at lines 20--26
+\tenrm 2015, The Stan-ford En-cy-clo-pe-dia of Phi-los-o-phy, Ed-ward N. Zalta 
+(ed.),, note=URL = http://plato.stanford.edu/archives/win2015/entries/logic-|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 2
+.\tenrm 0
+.\tenrm 1
+.\tenrm 5
+.\tenrm ,
+.etc.
+
+
+Overfull \hbox (13.82924pt too wide) in paragraph at lines 123--131
+[]\tenrm @inproceedingsDAC99, ti-tle=Patterns in prop-erty spec-i-fi-ca-tions f
+or finite-state ver-i-fi-ca-tion, au-thor=Dwyer,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm i
+.\tenrm n
+.\tenrm p
+.etc.
+
+! Undefined control sequence.
+l.177 title={\mbox
+                  {IEEE Standard Glossary of Software Engineering Terminolog...
+
+? 
+! Emergency stop.
+l.177 title={\mbox
+                  {IEEE Standard Glossary of Software Engineering Terminolog...
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

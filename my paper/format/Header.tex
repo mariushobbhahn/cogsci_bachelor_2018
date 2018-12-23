@@ -1,0 +1,243 @@
+%% Basierend auf einer TeXnicCenter-Vorlage von Mark M�ller
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% W�hlen Sie die Optionen aus, indem Sie % vor der Option entfernen  
+% Dokumentation des KOMA-Script-Packets: scrguide
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optionen zum Layout des Buchs                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[
+%a5paper,							% alle weiteren Papierformat einstellbar
+%landscape,						% Querformat
+12pt,								% Schriftgr��e (12pt, 11pt (Standard))
+%BCOR 1cm,							% Bindekorrektur, bspw. 1 cm
+%DIVcalc,							% f�hrt die Satzspiegelberechnung neu aus
+twoside ,							% s. scrguide 2.4
+%oneside,							% einseitiges Layout
+%twocolumn,						% zweispaltiger Satz
+%openany,							% Kapitel k�nnen auch auf linken Seiten beginnen
+openright,
+%openleft,
+%halfparskip*,				% Absatzformatierung s. scrguide 3.1
+%headsepline,					% Trennline zum Seitenkopf	
+%footsepline,					% Trennline zum Seitenfu�
+%notitlepage,					% in-page-Titel, keine eigene Titelseite
+%chapterprefix,				% vor Kapitel�berschrift wird "Kapitel Nummer" gesetzt
+%appendixprefix,				% Anhang wird "Anhang" vor die �berschrift gesetzt 
+%normalheadings,			% �berschriften etwas kleiner (smallheadings)
+%idxtotoc,						% Index im Inhaltsverzeichnis
+%liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
+%bibtotoc,						% Literaturverzeichnis im Inhalt
+%leqno,								% Nummerierung von Gleichungen links
+%fleqn,								% Ausgabe von Gleichungen linksb�ndig
+%draft								% �berlangen Zeilen in Ausgabe gekennzeichnet
+]
+{scrbook}
+
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter}
+%\pagestyle{empty}		% keine Kopf und Fu�zeile (k. Seitenzahl)
+%\pagestyle{headings}	% lebender Kolumnentitel  
+
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english]{babel}
+%\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[ansinew]{inputenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[scaled]{helvet}
+\usepackage{arydshln}  %for dashlines
+%lines for tabes
+
+
+
+%% Falls die automatische Worttrennung in W�rtern mit Umlauten
+%% nicht funktionieren sollte oder der Text pixelig aussieht:
+%% ==> Installieren Sie die cm-super Fonts (z.B. mit dem mikTeX Package Manager).
+%% Eine nicht ganz vollwertige Alternative ist die Verwendung dieses Pakets:
+\usepackage{ae, aeguill}
+
+
+%% Packages f�r Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%Zum Laden von Grafiken
+%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+%\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
+
+\usepackage{float} % f�r eine bessere Positionierung von Grafiken
+
+\usepackage{wrapfig}
+
+\usepackage{listliketab}  %f�r die getabbte itemize
+
+
+
+\usepackage[usenames]{color}
+\definecolor{rot}{RGB}{255,195,195}
+\definecolor{dunkelblau}{RGB}{160,172,254}
+\definecolor{hellblau}{RGB}{164,215,216}
+\definecolor{gelb}{RGB}{254,247,205}
+\definecolor{gruen}{RGB}{218,255,204}
+\definecolor{lila}{RGB}{205,181,217}
+\definecolor{Gray}{gray}{0.5}
+
+\usepackage{colortbl}    %um Tabellen farbig zu machen
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+
+%% Beachten Sie:
+%% Die Einbindung einer Grafik erfolgt mit \includegraphics{Dateiname}
+%% bzw. �ber den Dialog im Einf�gen-Men�.
+%% 
+%% Im Modus "LaTeX => PDF" k�nnen Sie u.a. folgende Grafikformate verwenden:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% In den Modi "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% k�nnen Sie u.a. folgende Grafikformate verwenden:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+
+%% Bibliographiestil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{natbib}
+
+
+
+%%  (Franz Gritschneder hinzugef�gte Bibliotheken)
+
+\usepackage{setspace}
+
+\usepackage{fancyhdr}							%f�r Kopf- und Fusszeilen
+
+
+
+\usepackage{lettrine}   % f�r Initialen an einem Abschnitt z.B. \lettrine[lines=1]{H}{}auptaug 
+
+%\usepackage[a4paper,
+%left=3cm, right=3cm,
+%top=3cm,
+% bottom=2cm]{geometry}
+
+\usepackage{pgfplots} %diagrams
+\usepackage{yfonts}   %Initialen
+
+%\usepackage[T1]{fontenc} % �ndert die Fontkodierung auf T1 Format
+\usepackage{pdfpages}
+%\ pdf einbinden
+
+%\parindent0mm  % Absatzeinrückung stoppen
+
+%graphics
+%\usepackage[demo]{graphicx}
+\usepackage{subfig}
+\usepackage{tabularx} %fancy tables
+%\usepackage{arydshln} %for hdashlines in tables
+
+\usepackage{listings} %for pseudo code
+
+\lstset{
+		frame=tb
+	}
+
+\usepackage[linesnumbered,ruled]{algorithm2e} %for pseudo code
+\DontPrintSemicolon 
+
+%\usepackage[ps2pdf,%
+%linktocpage,%
+%colorlinks,%
+%bookmarks,%
+%bookmarksopen,%
+%bookmarksnumbered]{hyperref}
+
+
+\usepackage{multirow}    % f�r die Tabellenumgebung
+%\usepackage{multicolumn} % f�r die Tabellenumgebung - 
+
+
+\setcounter{secnumdepth}{3}  %gibt die Tiefe der Nummerierung f�r Unterpunkte an
+
+%\chapter{Kapitel1}
+%\section{Punkt1}
+%\subsection{Unterpunkt1}
+%\subsubsection{Unterpunkt2}
+%\paragraph{Unterpunkt3}
+%\subparagraph{Unterpunkt4
+
+
+\newcommand{\entspr}{\ensuremath \widehat{=}}
+
+
+%\setlength{\parindent}{0pt} %kein Einzug auf der 1. Zeile eines Absatzes
+
+
+\usepackage{textcomp}
+ %Mathematikbefehle anzeigen
+%\usepackage{mathtools} 
+ \usepackage{amsmath}
+ \usepackage{amssymb}
+ 
+ \newcommand*{\nobarfrac}[2]{\genfrac{  \langle}{ \rangle}{0pt} {} {#1}{#2}}
+ 
+ %Zur Erzeugung von Index
+ \usepackage{makeidx}
+ %Index erstellen
+ \makeindex
+ 
+  %captionbefehle 
+ \usepackage{caption} 
+ \captionsetup{labelfont=bf, font={small,sf}}
+ 
+
+ \usepackage{hyperref}
+ 
+ 
+% \usepackage[colorlinks=true,        %zur anzeige der bookmarks im pdf-ausgabefile
+%        linkcolor=black,
+%        citecolor=black,
+%%        linkcolor=blue,
+%%        citecolor=red,
+%        filecolor=black,
+%        %pagecolor=black,
+%        urlcolor=black,
+%        bookmarks=true,
+%        bookmarksopen=false,
+%        bookmarksopenlevel=5,
+%        bookmarksnumbered,
+%        plainpages=false,
+%        pdfpagelabels=true]{hyperref}
+%\hypersetup{%
+%pdftitle = {Text},
+%pdfsubject = {Text},
+%pdfauthor = {Text},
+%pdfkeywords = {Text},
+%pdfcreator = {GNU Ghostscript 8.00},
+%pdfproducer = {LaTeX},
+%urlcolor = blue
+%}
+
+ 
+
+ 
+ 
+
+\makeatletter
+\renewenvironment{thebibliography}[1]
+{\chapter{Bibliography}%
+%{\chapter{\refname}%
+\@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+\list{\@biblabel{\@arabic\c@enumiv}}%
+{\settowidth\labelwidth{\@biblabel{#1}}%
+\leftmargin\labelwidth
+\advance\leftmargin\labelsep
+\@openbib@code
+\usecounter{enumiv}%
+\let\p@enumiv\@empty
+\renewcommand\theenumiv{\@arabic\c@enumiv}}%
+\sloppy
+\clubpenalty4000
+\@clubpenalty \clubpenalty
+\widowpenalty4000%
+\sfcode`\.\@m}
+{\def\@noitemerr
+{\@latex@warning{Empty `thebibliography' environment}}%
+\endlist}
+\makeatother

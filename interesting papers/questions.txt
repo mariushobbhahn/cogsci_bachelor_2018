@@ -1,0 +1,16 @@
+#paper on vae:
+1. what is the lower bound conceptually
+2. how does the latent space look like? Is it one distribution or a vector of distributions
+
+#what datasets can I use?
+1. mnist is a good trial example but seems to be too easy
+2. can I use random noise to destroy the picture or more fancy stuff such as one pixel attackes? 
+(this becomes more complicated very quickly)
+
+#inverse classification:
+1. give broken image without label. get label by recognition and new image. feed new image and label into what?
+2. training process is essentially: x-fold iteration of the autoencoder -> classification etc.
+
+#titel:
+1. making recognition of noisy images more robust with variational autoencoders and iterative/inverse classification
+2. 

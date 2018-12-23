@@ -1,0 +1,30 @@
+-introduction:
+	-see work of mitja, see work of butz and otte, see work of autoencoders -> can we do the 	same in one model?
+	-idea: learns to generalize concepts better
+	-if working -> less data necessary
+
+-related work:
+	-Ask Sebastian
+
+-theory:
+	-RNNs
+	-gradients
+	-vanishing gradient problem
+	-LSTMs
+	-adam
+
+-my new contribution:
+	-sequence generation
+	-inverse classification (adam)
+	-robust data
+
+-implementation(?)
+
+-experiments:
+	-sequence generation -> works perfectly
+	-latent space grid search -> nice results for 2 letters/rest TODO
+	-inverse classification -> works well for 2 Letters, less for more
+	-robust data -> TODO
+	-edge data (i.e. a/d) -> TODO
+
+-conclusion

@@ -1,0 +1,15 @@
+#variational autoencoder as in 2014 original paper:
+https://jmetzen.github.io/2015-11-27/vae.html
+https://github.com/shaohua0116/VAE-Tensorflow
+https://github.com/kvfrans/variational-autoencoder/blob/master/main.py (really slick code)
+
+#explanations for vae
+http://kvfrans.com/variational-autoencoders-explained/
+
+
+#tutorial in keras
+https://blog.keras.io/building-autoencoders-in-keras.html
+
+#explanation of variational lower bound
+https://xyang35.github.io/2017/04/14/variational-lower-bound/
+

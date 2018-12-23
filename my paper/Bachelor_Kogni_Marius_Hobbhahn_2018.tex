@@ -1,0 +1,193 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Haupteil des Dokuments -Main-                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{format/Header}
+
+\renewcommand{\headrulewidth}{0.0pt}    %Dicke der Kopflinie
+\renewcommand{\footrulewidth}{0.0pt}    %Dicke der Fusslinie
+
+\setlength{\textheight}{630pt}%630
+\setlength{\textwidth}{450pt}
+%\setlength{\textwidth}{17cm}
+\setlength{\headsep}{40pt}
+\setlength{\headheight}{50pt}%45
+
+
+%***** page style settings *****
+%For the beginning we dont display chapters, only pages
+
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{\leftmark}   %current chapter and section on the outer side header
+%\fancyhead[RE,LO]{\thechapter}
+%\fancyfoot[CE,CO]{\rightmark}  %next chapter and section in the center bot
+\fancyfoot[LE,RO]{\thepage}  %page number on the outer bottom side
+
+%\renewcommand{\headrulewidth}{2pt}  %thickness of the top line
+%\renewcommand{\footrulewidth}{1pt}  %thickness of the bottom line
+
+
+
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ihr Buch                                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Schmutztitel-Seite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\extratitle{Schmutztitel}
+
+%% eigene Titelseitengestaltung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%\begin{titlepage}
+%Einsetzen der TXC Vorlage "Deckblatt" m?glich
+%\end{titlepage}
+
+%\include{chapters/Deckblatt}
+
+%% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
+%\titlehead{Titelkopf}
+%\subject{Typisierung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\title{Der Name Ihrer Arbeit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\author{Ihr Name}
+%\and{Der Name des Co-Autoren}
+%\thanks{Fu?note}			% entspr. \footnote im Flie?text
+%\date{}							% falls anderes, als das aktuelle gew?nscht
+%\publishers{Herausgeber}
+
+%% R?ckseite der Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\uppertitleback{Titelr?ckseitenkopf}
+%\lowertitleback{Titelr?ckseitenfu?}
+
+%% Widmungsseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\dedication{Widmung}
+
+%\maketitle 						% Titelei wird erzeugt
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\begingroup %group removes the 1.paeg of chapter on right side -> empty pages
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+
+\frontmatter   %einleitungsteil   % Vorspann (z.B. roemische Seitenzahlen)
+
+\include{chapters/Cover}	
+
+\onehalfspacing % zeilen abstand 1.5
+
+\thispagestyle{empty}
+\include{chapters/Abstract}
+\newpage
+\tableofcontents
+
+
+
+
+
+
+\singlespacing %zeilenabstand 1.0
+%% Erzeugung von Verzeichnissen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1} % seitenzahl ab inhatsverzeichniss
+\addtocontents{toc}{\protect\thispagestyle{fancy}} 
+%\tableofcontents			% Inhaltsverzeichnis
+%\newpage
+%\addtocontents{lof}{\protect\thispagestyle{fancy}}  
+%\listoffigures				% Abbildungsverzeichnis
+%\newpage
+%\addtocontents{lot}{\protect\thispagestyle{fancy}} 
+%\listoftables				% Tabellenverzeichnis
+
+\endgroup
+
+
+
+%% Der Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onehalfspacing
+%\doublespacing
+
+
+%\cleardoublepage
+%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+\mainmatter
+\newcounter{romcounter}
+\setcounter{romcounter}{\value{page}}
+\renewcommand{\thepage}{\arabic{page}}
+\renewcommand{\chapterpagestyle}{empty} % first page of chapter now heading
+\setcounter{page}{1}
+
+\onehalfspacing
+
+%***** page style settings *****
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\leftmark}   %current chapter and section on the outer side header
+%\fancyhead[RE,LO]{\thechapter}
+\fancyfoot[CE,CO]{\rightmark}  %next chapter and section in the center bot
+\fancyfoot[LE,RO]{\thepage}  %page number on the outer bottom side
+
+\renewcommand{\headrulewidth}{2pt}  %thickness of the top line
+\renewcommand{\footrulewidth}{1pt}  %thickness of the bottom line
+
+%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+\include{chapters/Introduction}
+\include{chapters/Theory}
+\include{chapters/ICGM}
+\include{chapters/Experiments}
+\include{chapters/Conclusion}
+%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+%Anhang  Beschriftung mit "`Anhang A"' bzw. "`A."
+%\appendix	
+%    \captionsetup{list=no}	   
+%\include{chapters/AppendixA}
+%\include{chapters/AppendixB}
+%\renewcommand{\thepage}{\roman{page}}   %%Umstellung auf Roman-Stile
+%\setcounter{page}{\value{romcounter}} 
+
+
+%***** page style settings *****
+%For the references we dont display chapters, only pages
+
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{\leftmark}   %current chapter and section on the outer side header
+%\fancyhead[RE,LO]{\thechapter}
+%\fancyfoot[CE,CO]{\rightmark}  %next chapter and section in the center bot
+\fancyfoot[LE,RO]{\thepage}  %page number on the outer bottom side
+
+\renewcommand{\headrulewidth}{0pt}  %thickness of the top line
+\renewcommand{\footrulewidth}{0pt}  %thickness of the bottom line
+
+
+%\bibliographystyle{alpha}
+\bibliographystyle{alphadin}
+\nocite{*}
+\bibliography{references.bib}
+
+
+
+\backmatter					
+% Nachspann die Nummerierung der Gliederungseinheiten im Text und im Inhaltsverzeichnis unterdr?ckt
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\include{chapters/Declaration}
+\thispagestyle{empty}
+\newpage
+%\addcontentsline{toc}{chapter}{Index}
+\renewcommand{\indexname}{Index}
+\printindex
+
+
+\end{document}

@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Bachelor_Kogni_Marius_Hobbhahn_2018.aux
+A level-1 auxiliary file: chapters/Cover.aux
+A level-1 auxiliary file: chapters/Abstract.aux
+A level-1 auxiliary file: chapters/Introduction.aux
+A level-1 auxiliary file: chapters/Theory.aux
+A level-1 auxiliary file: chapters/ICGM.aux
+A level-1 auxiliary file: chapters/Experiments.aux
+A level-1 auxiliary file: chapters/Conclusion.aux
+The style file: alphadin.bst
+A level-1 auxiliary file: chapters/Declaration.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: references.bib.bib
+Warning--empty booktitle in Wiese2018
+Warning--empty pages in Wiese2018
+Warning--empty booktitle in REPRISE2018
+Warning--empty pages in REPRISE2018
+Warning--empty booktitle in 2018Nikolaus
+Warning--empty pages in 2018Nikolaus
+You've used 13 entries,
+            4793 wiz_defined-function locations,
+            994 strings with 9818 characters,
+and the built_in function-call counts, 13127 in all, are:
+= -- 1347
+> -- 481
+< -- 553
++ -- 644
+- -- 182
+* -- 987
+:= -- 2409
+add.period$ -- 17
+call.type$ -- 13
+change.case$ -- 109
+chr.to.int$ -- 13
+cite$ -- 19
+duplicate$ -- 274
+empty$ -- 633
+format.name$ -- 338
+if$ -- 2323
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 54
+newline$ -- 87
+num.names$ -- 40
+pop$ -- 129
+preamble$ -- 1
+purify$ -- 135
+quote$ -- 0
+skip$ -- 721
+stack$ -- 0
+substring$ -- 969
+swap$ -- 100
+text.length$ -- 86
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 130
+warning$ -- 6
+while$ -- 125
+width$ -- 16
+write$ -- 183
+(There were 6 warnings)

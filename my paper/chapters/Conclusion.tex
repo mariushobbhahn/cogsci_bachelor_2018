@@ -1,0 +1,99 @@
+% Main chapter 5:
+% Conclusion 
+
+\chapter{Conclusion}
+\label{chap:Conclusion}
+
+To conclude the work, the strengths and weaknesses of the models compared to randomness and to a standard classification approach are discussed and future research is outlined. 
+
+\section{Quality of the Model}
+
+To evaluate the quality of the model two questions need to be answered. 1. Does it work at all, i.e. is it better than randomness? And if that is the case: 2. Is it better than other approaches with similar infrastructure, i.e. the same number of parameters and the same kinds of artificial neural networks used?\\
+In table \ref{table:comparison_all} the average accuracy and the average RMSE for all different techniques and dimensions discussed in this paper can be found. 
+
+\begin{table}[!htb]
+	\centering
+	\caption{Every model tested in the work with respective accuracy, root mean squared error (RMSE), standard deviation of accuracy and error and values for random guessing.}
+	\begin{tabularx}{\textwidth}{p{5cm} X X X X}
+		\hline
+		model & accuracy & RMSE & std acc. & std RMSE\\ 
+		\hline
+		naked\_2 & 0.66 & 0.38 & 0.17 & 0.14 \\
+		ds\_2 & 0.54 & 0.49 & 0.12 & 0.09 \\
+		noise\_01\_2 & 0.67 & 0.3 & 0.21 & 0.15 \\
+		noise\_02\_2 & 0.98 & 0.08 & 0.03 & 0.04 \\
+		noise\_03\_2 & 1.0 & 0.08 & 0 & 0.03 \\
+		noise\_04\_2 & 1.0 & 0.12 & 0 & 0.02 \\
+		repeller\_2 & 0.79 & 0.15 & 0.07 & 0.02 \\
+		types\_2 & 0.79 & 0.34 & 0.17 & 0.12 \\
+		types\_noise\_04\_2 & 0.85 & 0.32 & 0.23 & 0.12 \\
+		sparse\_noise\_04\_2 & 0.97 & 0.13 & 0.03 & 0.03 \\
+		comparison\_mse\_2 & 1.0 &0.0& 0.0& 0.0 \\
+		comparison\_sparse\_2 & 0.98 & 0.11 & 0.02 & 0.09 \\
+		random\_values & 0.5 & 0.5 & - & - \\
+		\hline
+		naked\_4 & 0.49 & 0.38 & 0.14 & 0.05 \\
+		ds\_4 & 0.65 & 0.3 & 0.23 & 0.09 \\
+		noise\_01\_4 & 0.88 & 0.22 & 0.06 & 0.02 \\
+		noise\_02\_4 & 0.91 & 0.22 & 0.05 & 0.03 \\
+		noise\_03\_4 & 0.93 & 0.19 & 0.03 & 0.02 \\
+		noise\_04\_4 & 0.93 & 0.18 & 0.03& 0.02 \\
+		repeller\_4 & 0.58 & 0.27 & 0.11 & 0.05 \\
+		types\_4 & 0.27 & 0.44 & 0.08 & 0.02 \\
+		types\_noise\_04\_4 & 0.79 & 0.35 & 0.11 & 0.02 \\
+		sparse\_noise\_04\_4 & 0.97 & 0.18 & 0.02 & 0.01 \\
+		comparison\_mse\_4 & 0.94 & 0.13& 0.02& 0.03 \\
+		comparison\_sparse\_4 & 0.94& 0.17 & 0.02& 0.03 \\		
+		random\_values & 0.25 & 0.43 & - & - \\
+		\hline
+		naked\_20 & 0.35 & 0.2 & 0.05 & 0.0 \\
+		ds\_20 & 0.32 & 0.2 & 0.09 & 0.01 \\
+		noise\_01\_20 & 0.35 & 0.2 & 0.06 & 0.01 \\
+		noise\_02\_20 & 0.38 & 0.19 & 0.11 & 0.01 \\
+		noise\_03\_20 & 0.43 & 0.18 & 0.12 & 0.01 \\
+		noise\_04\_20 & 0.2 & 0.2 & 0.08 & 0.01 \\
+		repeller\_20 & 0.29 & 0.2 & 0.05 & 0.0 \\
+		types\_20 & 0.08 & 0.22 & 0.03 & 0.0 \\
+		types\_noise\_03\_20 & 0.09 & 0.22 & 0.04 & 0.0 \\
+		sparse\_noise\_03\_20 & 0.49 & 0.19 & 0.06 & 0.01 \\
+		comparison\_mse\_20 & 0.97 & 0.05 & 0.01& 0.01 \\
+		comparison\_sparse\_20 & 0.61 & 0.17& 0.13 & 0.02 \\
+		random\_values & 0.05 & 0.22 & - & - \\
+		\hline
+	\end{tabularx}
+	\label{table:comparison_all}
+\end{table}
+
+\section{Interpretation}
+
+Quantitatively, multiple results can be seen throughout the experiments. \\
+a) Double stacking LSTMs does not increase performance.\\
+b) Addition of noise improves the conceptual representation within latent space increasing accuracy of the models. However, there seems to be a point at which further addition of noise is more confusing than helpful which can be especially seen for the 20D model. \\
+c) The addition of an additional class of repeller vectors does not seem to have a strong effect. While increasing accuracy for the 2D models the improvement vanishes with more dimensions. \\
+d) The addition of types adds an additional degree of complexity to the process that higher dimensional models, i.e. 4D and 20D, cannot handle anymore and is therefore harmful. \\
+e) The addition of noise on types is able to improve results for lower dimension but unable to repair the problems of 20D typed representations. \\
+f) The removal of many data points to generate sparse data does close to no harm at all. In the case of 4D and 20D it even outperforms the models trained on all data slightly for unclear reasons. \\
+g) The comparison models show mostly similar or better classification qualities compared to the best other models. Especially for 20D the difference is very significant. \\
+h) When the comparison model is trained on sparse data the classification quality stays similar for 2D and 4D but drops very much for 20D. \\
+i) RMSE correlates strongly with the classification accuracy, the quality of internal representations therefore affect correctness of and confidence in the model in the same way. \\
+j) On average, all models outperform random guessing, even if individual instances are worse for 20 dimensions. \\
+
+Qualitatively, the most important result, which also holds true for all experiments, is that the quality of the inverse classification model is very much determined by the quality of the internal representations of the generative model, i.e. the latent space. This can be found throughout all heat maps, where a clear separation along the $x=y$ axis implies better results for the inverse classification. It can also be seen within the SOMs where the separation of clusters within the latent space implies higher accuracy. And lastly it can be seen with the addition of noise to all models. When noise is added the model learns more different variants of the model, has therefore a better understanding of the concept representing a character and thereby a less sparse latent space.\\
+The fact that Inverse Classification performs significantly worse than standard classification for 20 dimensions is obvious, but no clear reason could be identified. Further tests with much longer training times (i.e. 8 times more epochs) for the generative model or 500 epochs for inverse classification yielded exactly the same results as the respective method with normal values for training times and epochs. Potential other sources could be that added complexity requires categorically different methods for generation or other hyperparameters in general needed to be used. The first suggestion seems implausible, since the 20D models were able to generate all letters accurately. A third solution, however, is the adversarial training used in \cite{Wiese2018}. It combats the problem of unstructured latent spaces but was published so recently, that no time was left to try it in the scope of this work. It will be tested in future work.
+
+\section{Advantages of Inverse Classification}
+
+In comparison to other forms of classification, Inverse Classification has multiple advantages: \\
+
+(1) Results. For all techniques the comparison model either outperformed or yielded similar results to them. So with these training methods, hyperparameters and general setup, inverse classification does not beat standard classification. A major advantage and also a primary goal of inverse classification is the handling of sparse data. While the comparison models where affected by the removal of data, the inverse classification did not seem to decrease its accuracy with significantly smaller training size. \\
+
+(2) Having two applications for the same model halves the training time. Instead of having to train a generator and a classifier for the same data separately, the same model can fulfill both tasks. \\
+
+(3) Having two processes combined, means that two processes can be optimized. To enhance the representation within latent space, the generative process can be manipulated. To enhance the inverse classification this part of the process can be changed. In sum, both have influence on the result. 
+
+\section{Future Work}
+
+Future work would mainly consist of the manipulations addressed in the last point of the last section. \\
+(1) Enhancement of the generative model. A more complex architecture might lead to better internal representations. Other training methods or a change of hyperparameters might also produce a better latent space. \\
+
+(2) Improvement of the Inverse Classification. Applying a variety of different techniques that are currently used for forward classification might also be helpful for the inverse classification. The application of different optimizers or other functions during every iteration like the softmax function might hold significant improvements.

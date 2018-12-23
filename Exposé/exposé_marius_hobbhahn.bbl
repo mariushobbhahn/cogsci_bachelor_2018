@@ -1,0 +1,28 @@
+\begin{thebibliography}{MDAS18}
+
+\bibitem[KW13]{2013VAE}
+D.~P {Kingma} and M.~{Welling}.
+\newblock {Auto-Encoding Variational Bayes}.
+\newblock {\em ArXiv e-prints}, December 2013.
+
+\bibitem[MDAS18]{REPRISE2018}
+{Martin V. Butz}, {David Bilkey}, {Alistair Knott}, and {Sebastian Otte}.
+\newblock {REPRISE: A Retrospective and Prospective Inference Scheme}.
+\newblock 2018.
+
+\bibitem[MMS17]{2018Nikolaus}
+{Mitja Nikolaus}, {Martin V. Butz}, and {Sebastian Otte}.
+\newblock {Investigating the Generative Capabilities of Recurrent Neural
+  Networks}.
+\newblock October 2017.
+
+\bibitem[OSFB17]{RocketballOtte2017}
+Sebastian Otte, Theresa Schmitt, Karl Friston, and Martin~V. Butz.
+\newblock Inferring adaptive goal-directed behavior within recurrent neural
+  networks.
+\newblock In Alessandra Lintas, Stefano Rovetta, Paul~F.M.J. Verschure, and
+  Alessandro~E.P. Villa, editors, {\em Artificial Neural Networks and Machine
+  Learning -- ICANN 2017}, pages 227--235, Cham, 2017. Springer International
+  Publishing.
+
+\end{thebibliography}

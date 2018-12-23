@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: exposé_marius_hobbhahn.aux
+The style file: alpha.bst
+Database file #1: references.bib.bib
+Warning--empty booktitle in REPRISE2018
+Warning--empty booktitle in 2018Nikolaus
+You've used 4 entries,
+            2543 wiz_defined-function locations,
+            585 strings with 5359 characters,
+and the built_in function-call counts, 1856 in all, are:
+= -- 172
+> -- 120
+< -- 1
++ -- 43
+- -- 43
+* -- 134
+:= -- 320
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 29
+chr.to.int$ -- 4
+cite$ -- 6
+duplicate$ -- 71
+empty$ -- 122
+format.name$ -- 47
+if$ -- 373
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 14
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 60
+stack$ -- 0
+substring$ -- 60
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 32
+warning$ -- 2
+while$ -- 16
+width$ -- 6
+write$ -- 51
+(There were 2 warnings)

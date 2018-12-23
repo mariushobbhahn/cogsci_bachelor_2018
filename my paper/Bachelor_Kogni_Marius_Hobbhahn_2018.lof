@@ -1,0 +1,86 @@
+\select@language {english}
+\thispagestyle {fancy}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces dynamic time warping algorithm in pseudo code. $n,m$ represent the length of sequence 1 and 2.\relax }}{5}{figure.caption.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Depiction of the sequence generation.\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Depiction of the inverse classification.\relax }}{9}{figure.caption.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces On the left the character 'u' and on the right the character 'w' is depicted as they are found in the data set. Since they are rather similar in look the network might have additional difficulties separating them accordingly.\relax }}{12}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}{subfigure.1.2}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces (a) - (e) represent the distance of the classification data to a given instance of the character 'a' of 5 identical models with no additions that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character 'b'. \relax }}{16}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{16}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{16}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{16}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{16}{subfigure.2.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{16}{subfigure.2.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{16}{subfigure.2.6}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces from left to right: the model without additions with its respective accuracy and root mean squared error.\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces evaluation of mean and standard deviation of the 2D model without additions\relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces from left to right: the model without additions trained on 4 characters with its respective accuracy and root mean squared error.\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces evaluation of mean and standard deviation of the 4D model without additions\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces SOM for version 0 of the model without additions trained on 4 characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces SOM for version 0 of the model without additions trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{20}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces from left to right: the model without additions trained on 20 characters with its respective accuracy and root mean squared error.\relax }}{20}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces (a) - (e) represent the distance of the classification data to a given instance of the character 'a' of 5 identical models of double stacked LSTMs that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character 'b'. \relax }}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{21}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{21}{subfigure.10.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{21}{subfigure.10.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{21}{subfigure.10.6}
+\contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces from left to right: the double stacked LSTM model with its respective accuracy and root mean squared error.\relax }}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces evaluation of mean and standard deviation of the 2D model with double stacked LSTM\relax }}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter 'c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.14}{\ignorespaces SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter 'd' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{23}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 4.15}{\ignorespaces from left to right: the model with double stacked LSTMs trained on 4 characters with its respective accuracy and root mean squared error.\relax }}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 4.16}{\ignorespaces evaluation of mean and standard deviation of the 4D model with double stacked LSTMs\relax }}{24}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 4.17}{\ignorespaces (a) - (e) represent the distance of the classification data to a given instance of the character 'a' of 5 identical models with addition of noise with standard deviation of 0.1 that are independently trained on the same dataset. (f) - (j) show the same for standard deviation of 0.2. Every further row follows this trend and adds 0.1 more standard deviation for the training of the model.\relax }}{25}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{25}{subfigure.17.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{25}{subfigure.17.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{25}{subfigure.17.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{25}{subfigure.17.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{25}{subfigure.17.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{25}{subfigure.17.6}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{25}{subfigure.17.7}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{25}{subfigure.17.8}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {}}}{25}{subfigure.17.9}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {}}}{25}{subfigure.17.10}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {}}}{25}{subfigure.17.11}
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {}}}{25}{subfigure.17.12}
+\contentsline {subfigure}{\numberline {(m)}{\ignorespaces {}}}{25}{subfigure.17.13}
+\contentsline {subfigure}{\numberline {(n)}{\ignorespaces {}}}{25}{subfigure.17.14}
+\contentsline {subfigure}{\numberline {(o)}{\ignorespaces {}}}{25}{subfigure.17.15}
+\contentsline {subfigure}{\numberline {(p)}{\ignorespaces {}}}{25}{subfigure.17.16}
+\contentsline {subfigure}{\numberline {(q)}{\ignorespaces {}}}{25}{subfigure.17.17}
+\contentsline {subfigure}{\numberline {(r)}{\ignorespaces {}}}{25}{subfigure.17.18}
+\contentsline {subfigure}{\numberline {(s)}{\ignorespaces {}}}{25}{subfigure.17.19}
+\contentsline {subfigure}{\numberline {(t)}{\ignorespaces {}}}{25}{subfigure.17.20}
+\contentsline {figure}{\numberline {\relax 4.18}{\ignorespaces from left to right: the model with addition of noise trained on 2 characters with its respective accuracy and root mean squared error for the inverse classification.\relax }}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 4.19}{\ignorespaces evaluation of mean and standard deviation of the 2D model with the addition of noise with different standard deviations.\relax }}{26}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.20}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{27}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 4.21}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.2 trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 4.22}{\ignorespaces SOM for version 0 of the model with with the addition of noise with standard deviation of 0.3 trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 4.23}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter 'c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 4.24}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.3 trained on 4 characters. Only the letter 'c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 4.25}{\ignorespaces from left to right: the model with addition of noise trained on 4 characters with its respective accuracy and root mean squared error for the inverse classification.\relax }}{32}{figure.caption.33}
+\contentsline {figure}{\numberline {\relax 4.26}{\ignorespaces evaluation of mean and standard deviation of the 4D model with the addition of noise with different standard deviations.\relax }}{32}{figure.caption.34}
+\contentsline {figure}{\numberline {\relax 4.27}{\ignorespaces (a) - (e) represent the distance of the classification data to a given instance of the character 'a' of 5 identical models of 2D models with repeller addition that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character 'b'. \relax }}{33}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{33}{subfigure.27.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{33}{subfigure.27.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{33}{subfigure.27.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{33}{subfigure.27.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{33}{subfigure.27.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{33}{subfigure.27.6}
+\contentsline {figure}{\numberline {\relax 4.28}{\ignorespaces from left to right: the 2D model with repeller addition with its respective accuracy and root mean squared error.\relax }}{33}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 4.29}{\ignorespaces evaluation of mean and standard deviation of the 2D model with repeller addition.\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 4.30}{\ignorespaces SOM for version 0 of the repeller model trained on 4 characters. Only the class 'x' is shown which stands for unrecognizable characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{34}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 4.31}{\ignorespaces SOM for version 0 of the repeller model trained on 4 characters. Only the letter 'd' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{35}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 4.32}{\ignorespaces The repeller models for 4D with its respective accuracy and root mean squared error.\relax }}{35}{figure.caption.40}
+\contentsline {figure}{\numberline {\relax 4.33}{\ignorespaces evaluation of mean and standard deviation of the 4D model with repeller.\relax }}{36}{figure.caption.41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Every model tested in the work with respective accuracy, root mean squared error (RMSE), standard deviation of accuracy and error and values for random guessing.\relax }}{40}{figure.caption.42}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

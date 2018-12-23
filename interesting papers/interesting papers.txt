@@ -1,0 +1,30 @@
+########videos###############
+
+#GAN cat pictures
+https://www.youtube.com/watch?v=MUVbqQ3STFA
+
+#one pixel attack:
+https://www.youtube.com/watch?v=SA4YEAWVpbk
+
+#variational autoencoders
+https://www.youtube.com/watch?v=9zKuYvjFFS8
+
+#what is and autoencoder TMP
+https://www.youtube.com/watch?v=Rdpbnd0pCiI
+
+
+########papers#################
+#original paper VAE:
+https://arxiv.org/pdf/1312.6114.pdf
+
+#using AE to denoise images:
+http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf
+
+#learn images and labels with VAE:
+https://papers.nips.cc/paper/6528-variational-autoencoder-for-deep-learning-of-images-labels-and-captions.pdf
+
+#application of VAE to disentangled joint representations
+https://arxiv.org/abs/1804.00104
+
+#sequence to sequence VAE
+https://arxiv.org/pdf/1802.03238.pdf

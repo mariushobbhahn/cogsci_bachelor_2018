@@ -1,0 +1,230 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{uci2013}
+\citation{AdamKingmaB14}
+\citation{chollet2015keras}
+\citation{tensorflow2015-whitepaper}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments and Results}{15}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lol}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:Experiments}{{4}{15}{Experiments and Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Setup}{15}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Data}{15}{subsection.4.1.1}}
+\citation{AdamKingmaB14}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces On the left the character 'u' and on the right the character 'w' is depicted as they are found in the data set. Since they are rather similar in look the network might have additional difficulties separating them accordingly.\relax }}{16}{figure.caption.7}}
+\newlabel{fig:hard_characters}{{\relax 4.1}{16}{On the left the character 'u' and on the right the character 'w' is depicted as they are found in the data set. Since they are rather similar in look the network might have additional difficulties separating them accordingly.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{16}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{16}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Generative Model}{16}{subsection.4.1.2}}
+\newlabel{subsec:generative_model}{{4.1.2}{16}{Generative Model}{subsection.4.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Implementation details of the generative model. LSTM with hidden size of 205 combined with a fully connected layer with 2 units generating 2D sequences of length 205, since this is the number of timesteps used. This model is not unfolded over time.\relax }}{17}{figure.caption.8}}
+\newlabel{fig:generative_model_details}{{\relax 4.2}{17}{Implementation details of the generative model. LSTM with hidden size of 205 combined with a fully connected layer with 2 units generating 2D sequences of length 205, since this is the number of timesteps used. This model is not unfolded over time.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Inverse Classification}{17}{subsection.4.1.3}}
+\newlabel{subsec:inverse_classification}{{4.1.3}{17}{Inverse Classification}{subsection.4.1.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Adam algorithm with parameters $\alpha = 0.05, \beta _1 = 0.9, \beta _2 = 0.999, \epsilon = 10^{-8}$ and $n_i = 200$. The Objektive function is the MSE loss and the parameters are only the input vector that is adapted through inverse classification.\relax }}{18}{algocf.2}}
+\newlabel{alg:Adam}{{2}{18}{Inverse Classification}{algocf.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Metrics}{19}{subsection.4.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Naked Model}{20}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Two Dimensions}{20}{subsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces  (a) - (e) represent the distance of the classification data to a given instance of the character `a' of five instances of the model with no additions that are independently trained on the same dataset. (f) shows the distance of the same instances as depicted in (a) to the character 'b'. \relax }}{21}{figure.caption.10}}
+\newlabel{fig:2_naked}{{\relax 4.3}{21}{(a) - (e) represent the distance of the classification data to a given instance of the character `a' of five instances of the model with no additions that are independently trained on the same dataset. (f) shows the distance of the same instances as depicted in (a) to the character 'b'. \relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{21}{subfigure.3.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{21}{subfigure.3.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{21}{subfigure.3.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{21}{subfigure.3.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{21}{subfigure.3.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{21}{subfigure.3.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Results for the 2D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{21}{table.caption.11}}
+\newlabel{table:2_naked}{{\relax 4.1}{21}{Results for the 2D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Four Dimensions}{22}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}20 Dimensions}{22}{subsection.4.2.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.2}{\ignorespaces Results for the 4D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{23}{table.caption.12}}
+\newlabel{table:4_naked}{{\relax 4.2}{23}{Results for the 4D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces SOM for version 0 of the model without additions trained on 4 characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{23}{figure.caption.13}}
+\newlabel{fig:4d_naked_all}{{\relax 4.4}{23}{SOM for version 0 of the model without additions trained on 4 characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces SOM for version 0 of the model without additions trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{24}{figure.caption.14}}
+\newlabel{fig:4d_naked_a}{{\relax 4.5}{24}{SOM for version 0 of the model without additions trained on 4 characters. Only the letter 'a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.3}{\ignorespaces Results for the 20D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{24}{table.caption.15}}
+\newlabel{table:20_naked}{{\relax 4.3}{24}{Results for the 20D models without additions. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Double Stacked LSTM}{25}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Two Dimensions}{25}{subsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces  (a) - (e) represent the distance of the classification data to a given instance of the character 'a' of five instances of the model of double stacked LSTMs that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character 'b'. \relax }}{25}{figure.caption.16}}
+\newlabel{fig:2_ds}{{\relax 4.6}{25}{(a) - (e) represent the distance of the classification data to a given instance of the character 'a' of five instances of the model of double stacked LSTMs that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character 'b'. \relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{25}{subfigure.6.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{25}{subfigure.6.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{25}{subfigure.6.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{25}{subfigure.6.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{25}{subfigure.6.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{25}{subfigure.6.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.4}{\ignorespaces Results for the 2D models with a double stacked LSTM. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{26}{table.caption.17}}
+\newlabel{table:2_ds}{{\relax 4.4}{26}{Results for the 2D models with a double stacked LSTM. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Four Dimensions}{26}{subsection.4.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{27}{figure.caption.18}}
+\newlabel{fig:4d_ds_c}{{\relax 4.7}{27}{SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.5}{\ignorespaces Results for the 4D models with double stacked LSTMs. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{27}{table.caption.20}}
+\newlabel{table:4_ds}{{\relax 4.5}{27}{Results for the 4D models with double stacked LSTMs. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter `d' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{28}{figure.caption.19}}
+\newlabel{fig:4d_ds_d}{{\relax 4.8}{28}{SOM for version 0 of the model with the double stacked LSTMs trained on 4 characters. Only the letter `d' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}20 Dimensions}{28}{subsection.4.3.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.6}{\ignorespaces Results for the 20D models with double stacked LSTMs. The first five rows represent the accuracy and RMSE for each instance of the instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{28}{table.caption.21}}
+\newlabel{table:20_ds}{{\relax 4.6}{28}{Results for the 20D models with double stacked LSTMs. The first five rows represent the accuracy and RMSE for each instance of the instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Addition of Noise}{29}{section.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Two Dimensions}{29}{subsection.4.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces  (a) - (e) represent the distance of the classification data to a given instance of the character `a' of 5 identical instances of the same model with addition of noise and standard deviation of 0.1 that are independently trained on the same dataset. (f) - (j) show the same for standard deviation of 0.2. Every further row follows this trend and adds 0.1 more standard deviation for the training of the model.\relax }}{30}{figure.caption.22}}
+\newlabel{fig:2_noise}{{\relax 4.9}{30}{(a) - (e) represent the distance of the classification data to a given instance of the character `a' of 5 identical instances of the same model with addition of noise and standard deviation of 0.1 that are independently trained on the same dataset. (f) - (j) show the same for standard deviation of 0.2. Every further row follows this trend and adds 0.1 more standard deviation for the training of the model.\relax }{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{30}{subfigure.9.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{30}{subfigure.9.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{30}{subfigure.9.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{30}{subfigure.9.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{30}{subfigure.9.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{30}{subfigure.9.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(g)}{\ignorespaces {}}}{30}{subfigure.9.7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(h)}{\ignorespaces {}}}{30}{subfigure.9.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(i)}{\ignorespaces {}}}{30}{subfigure.9.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(j)}{\ignorespaces {}}}{30}{subfigure.9.10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(k)}{\ignorespaces {}}}{30}{subfigure.9.11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(l)}{\ignorespaces {}}}{30}{subfigure.9.12}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(m)}{\ignorespaces {}}}{30}{subfigure.9.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(n)}{\ignorespaces {}}}{30}{subfigure.9.14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(o)}{\ignorespaces {}}}{30}{subfigure.9.15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(p)}{\ignorespaces {}}}{30}{subfigure.9.16}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(q)}{\ignorespaces {}}}{30}{subfigure.9.17}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(r)}{\ignorespaces {}}}{30}{subfigure.9.18}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(s)}{\ignorespaces {}}}{30}{subfigure.9.19}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(t)}{\ignorespaces {}}}{30}{subfigure.9.20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Four Dimensions}{30}{subsection.4.4.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.7}{\ignorespaces Results for the 2D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }}{31}{table.caption.23}}
+\newlabel{table:2_noise}{{\relax 4.7}{31}{Results for the 2D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{32}{figure.caption.24}}
+\newlabel{fig:4d_noise_01_a}{{\relax 4.10}{32}{SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.2 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{33}{figure.caption.25}}
+\newlabel{fig:4d_noise_02_a}{{\relax 4.11}{33}{SOM for version 0 of the model with the addition of noise with standard deviation of 0.2 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}20 Dimensions}{33}{subsection.4.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces SOM for version 0 of the model with with the addition of noise with standard deviation of 0.3 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{34}{figure.caption.26}}
+\newlabel{fig:4d_noise_03_a}{{\relax 4.12}{34}{SOM for version 0 of the model with with the addition of noise with standard deviation of 0.3 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces SOM for version 0 of the model with with the addition of noise with standard deviation of 0.4 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{35}{figure.caption.27}}
+\newlabel{fig:4d_noise_04_a}{{\relax 4.13}{35}{SOM for version 0 of the model with with the addition of noise with standard deviation of 0.4 trained on 4 characters. Only the letter `a' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Repeller Vector}{35}{section.4.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.14}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{36}{figure.caption.28}}
+\newlabel{fig:4d_noise_01_c}{{\relax 4.14}{36}{SOM for version 0 of the model with the addition of noise with standard deviation of 0.1 trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Two Dimensions}{36}{subsection.4.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.15}{\ignorespaces SOM for version 0 of the model with the addition of noise with standard deviation of 0.4 trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{37}{figure.caption.29}}
+\newlabel{fig:4d_noise_04_c}{{\relax 4.15}{37}{SOM for version 0 of the model with the addition of noise with standard deviation of 0.4 trained on 4 characters. Only the letter `c' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Four Dimensions}{37}{subsection.4.5.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.8}{\ignorespaces Results for the 4D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }}{38}{table.caption.30}}
+\newlabel{table:4_noise}{{\relax 4.8}{38}{Results for the 4D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.30}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.9}{\ignorespaces Results for the 20D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }}{39}{table.caption.31}}
+\newlabel{table:20_noise}{{\relax 4.9}{39}{Results for the 20D models with the addition of noise with standard deviations of 0.1, 0.2, 0.3 and 0.4. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.16}{\ignorespaces  (a) - (e) represent the distance of the classification data to a given instance of the character `a' of five instances of the 2D models with repeller addition that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character `b'. \relax }}{40}{figure.caption.32}}
+\newlabel{fig:2_repeller}{{\relax 4.16}{40}{(a) - (e) represent the distance of the classification data to a given instance of the character `a' of five instances of the 2D models with repeller addition that are independently trained on the same dataset. (f) shows the distance of the same model as depicted in (a) to the character `b'. \relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{40}{subfigure.16.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{40}{subfigure.16.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {}}}{40}{subfigure.16.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {}}}{40}{subfigure.16.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {}}}{40}{subfigure.16.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {}}}{40}{subfigure.16.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.10}{\ignorespaces Results for the 2D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }}{40}{table.caption.33}}
+\newlabel{table:2_repeller}{{\relax 4.10}{40}{Results for the 2D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.17}{\ignorespaces SOM for version 0 of the repeller model trained on 4 characters. Only the class `x' is shown which stands for unrecognizable characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{41}{figure.caption.34}}
+\newlabel{fig:4d_repeller_x}{{\relax 4.17}{41}{SOM for version 0 of the repeller model trained on 4 characters. Only the class `x' is shown which stands for unrecognizable characters. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.34}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.11}{\ignorespaces Results for the 4D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }}{41}{table.caption.36}}
+\newlabel{table:4_repeller}{{\relax 4.11}{41}{Results for the 4D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for each instance of the model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.18}{\ignorespaces SOM for version 0 of the repeller model trained on 4 characters. Only the letter `d' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }}{42}{figure.caption.35}}
+\newlabel{fig:4d_repeller_d}{{\relax 4.18}{42}{SOM for version 0 of the repeller model trained on 4 characters. Only the letter `d' is represented. Red vectors are the bases for the prediction and blue characters are the result of the given prediction. The map in the background shows the average distances for each weight to their neighbors.\relax }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}20 Dimensions}{42}{subsection.4.5.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.12}{\ignorespaces Results for the 20D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for instance of the each model respectively while the last two show mean and standard deviation for each respective category.\relax }}{42}{table.caption.37}}
+\newlabel{table:20_repeller}{{\relax 4.12}{42}{Results for the 20D models with the addition of repeller vectors. The first five rows represent the accuracy and RMSE for instance of the each model respectively while the last two show mean and standard deviation for each respective category.\relax }{table.caption.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Addition of Types}{43}{section.4.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Two Dimensions}{43}{subsection.4.6.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.13}{\ignorespaces Results for the 2D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{44}{table.caption.38}}
+\newlabel{table:2_types}{{\relax 4.13}{44}{Results for the 2D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Four Dimensions}{44}{subsection.4.6.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.14}{\ignorespaces Results for the 4D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{44}{table.caption.39}}
+\newlabel{table:4_types}{{\relax 4.14}{44}{Results for the 4D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}20 Dimensions}{44}{subsection.4.6.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.15}{\ignorespaces Results for the 20D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{45}{table.caption.40}}
+\newlabel{table:20_types}{{\relax 4.15}{45}{Results for the 20D models trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Addition of Types with Noise}{45}{section.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.1}Two Dimensions}{45}{subsection.4.7.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.16}{\ignorespaces Results for the 2D models with the addition of noise with standard deviation 0.4 trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{46}{table.caption.41}}
+\newlabel{table:2_types_noise_04}{{\relax 4.16}{46}{Results for the 2D models with the addition of noise with standard deviation 0.4 trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.17}{\ignorespaces Results for the 4D models with the addition of noise with standard deviation 0.4 trained on typed data. The first five rows represent the accuracy and RMSE for each model instance of the while the last two show mean and standard deviation for each respective category.\relax }}{46}{table.caption.42}}
+\newlabel{table:4_types_noise_04}{{\relax 4.17}{46}{Results for the 4D models with the addition of noise with standard deviation 0.4 trained on typed data. The first five rows represent the accuracy and RMSE for each model instance of the while the last two show mean and standard deviation for each respective category.\relax }{table.caption.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.2}Four Dimensions}{46}{subsection.4.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7.3}20 Dimensions}{46}{subsection.4.7.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.18}{\ignorespaces Results for the 20D models with the addition of noise with standard deviation 0.3 trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{47}{table.caption.43}}
+\newlabel{table:20_types_noise_03}{{\relax 4.18}{47}{Results for the 20D models with the addition of noise with standard deviation 0.3 trained on typed data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Sparse Data with Noise}{47}{section.4.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.1}Two Dimensions}{47}{subsection.4.8.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.19}{\ignorespaces Results for the 2D models with the addition of noise with standard deviation 0.4 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{48}{table.caption.44}}
+\newlabel{table:2_sparse_noise_04}{{\relax 4.19}{48}{Results for the 2D models with the addition of noise with standard deviation 0.4 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.2}Four Dimensions}{48}{subsection.4.8.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.20}{\ignorespaces Results for the 4D models with the addition of noise with standard deviation 0.4 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{48}{table.caption.45}}
+\newlabel{table:4_sparse_noise_04}{{\relax 4.20}{48}{Results for the 4D models with the addition of noise with standard deviation 0.4 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.45}{}}
+\citation{AdamKingmaB14}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8.3}20 Dimensions}{49}{subsection.4.8.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.21}{\ignorespaces Results for the 20D models with the addition of noise with standard deviation 0.3 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{49}{table.caption.46}}
+\newlabel{table:20_sparse_noise_03}{{\relax 4.21}{49}{Results for the 20D models with the addition of noise with standard deviation 0.3 trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}Comparison with Standard Classification}{49}{section.4.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9.1}Two Dimensions}{50}{subsection.4.9.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.22}{\ignorespaces Results for the 2D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{50}{table.caption.47}}
+\newlabel{table:2_comparison_mse}{{\relax 4.22}{50}{Results for the 2D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.47}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.23}{\ignorespaces Results for the 2D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{50}{table.caption.48}}
+\newlabel{table:2_comparison_sparse}{{\relax 4.23}{50}{Results for the 2D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.48}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9.2}Four Dimensions}{51}{subsection.4.9.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.24}{\ignorespaces Results for the 4D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{51}{table.caption.49}}
+\newlabel{table:4_comparison_mse}{{\relax 4.24}{51}{Results for the 4D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.49}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.25}{\ignorespaces Results for the 4D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{51}{table.caption.50}}
+\newlabel{table:4_comparison_sparse}{{\relax 4.25}{51}{Results for the 4D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.50}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9.3}20 Dimensions}{52}{subsection.4.9.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.26}{\ignorespaces Results for the 20D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{52}{table.caption.51}}
+\newlabel{table:20_comparison_mse}{{\relax 4.26}{52}{Results for the 20D models with a standard sequence classification approach. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.51}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax 4.27}{\ignorespaces Results for the 20D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }}{52}{table.caption.52}}
+\newlabel{table:20_comparison_sparse}{{\relax 4.27}{52}{Results for the 20D models with a standard sequence classification approach trained on sparse data. The first five rows represent the accuracy and RMSE for each instance of the model while the last two show mean and standard deviation for each respective category.\relax }{table.caption.52}{}}
+\@setckpt{chapters/Experiments}{
+\setcounter{page}{54}
+\setcounter{equation}{8}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{9}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{18}
+\setcounter{table}{27}
+\setcounter{float@type}{8}
+\setcounter{DefaultLines}{2}
+\setcounter{DefaultDepth}{0}
+\setcounter{L@lines}{0}
+\setcounter{L@depth}{0}
+\setcounter{AM@survey}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{6}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{0}
+\setcounter{lotdepth}{1}
+\setcounter{lstnumber}{1}
+\setcounter{AlgoLine}{12}
+\setcounter{algocfline}{2}
+\setcounter{algocfproc}{2}
+\setcounter{algocf}{2}
+\setcounter{parentequation}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{3}
+\setcounter{bookmark@seq@number}{49}
+\setcounter{lstlisting}{0}
+\setcounter{section@level}{2}
+\setcounter{romcounter}{1}
+}
